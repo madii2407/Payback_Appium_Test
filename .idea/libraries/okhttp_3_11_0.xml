@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="okhttp-3.11.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/lib/okhttp-3.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/lib/okio-1.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/lib/selenium-server-standalone-3.141.59.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
