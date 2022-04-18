@@ -1,3 +1,6 @@
+import com.tngtech.jgiven.junit.ScenarioTest;
+
+import com.tngtech.jgiven.Stage;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
@@ -16,7 +19,13 @@ public class AndroidTest {
 
     AppiumDriver driver;
 
-    @Test()
+    public class beforeAddingCapabilities extends Stage<beforeAddingCapabilities> {
+        public beforeAddingCapabilities beforeTest() {
+            return self();
+        }
+    }
+
+    @BeforeAll()
     public void setUp() throws MalformedURLException {
         DesiredCapabilities cap =new DesiredCapabilities();
 
@@ -28,9 +37,15 @@ public class AndroidTest {
 //        URL url = new URL("http://127.0.0.1:4723/wd/hub");
         driver = new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
     }
+
+    public class locateElements extends Stage<locateElements> {
+        public locateElements Locators() {
+            return self();
+        }
+    }
+
     @Test
     public void elementTest(){
-
 
         MobileElement el6 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View[6]/android.view.View[3]/android.view.View[11]/android.view.View[2]/android.view.View/android.view.View[3]/android.view.View/android.widget.EditText");
         el6.sendKeys("m.mahadkhurshid@hotmail.com");
@@ -78,6 +93,11 @@ public class AndroidTest {
         el26.click();
     }
 
+    public class runApp extends Stage<runApp> {
+    public runApp apprunning() {
+        return self();
+    }
+}
     @AfterTest
     public void tearDown(){
         if(null != driver){
