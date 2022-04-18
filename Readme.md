@@ -25,6 +25,12 @@ First, you have to start the server in the Appium server. As soon as it gets sta
 for IntelliJ. There are a bunch of dependencies that will most likely be installed on their own. if not, then download them "https://mvnrepository.com/"
 Everything will work smoothly.
 
+## Exceptions
+
+Due to the issues in the signup, My code starts from the 2nd-page of signup.
+
+Due to the unavailability of coupon partner "REWE", I have used "Booking.com" for my testing. 
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
