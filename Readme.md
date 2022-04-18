@@ -11,6 +11,10 @@ Download Appium using online resources including its server and inspector
 
 If you are using the command line to run Appium then the command is below:
 
+```bash
+appium
+```
+
 ## IDE
 
 I have used IntelliJ as an IDE and android studio for the SDK manager and emulator
